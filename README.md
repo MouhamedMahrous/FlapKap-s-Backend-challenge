@@ -3,18 +3,18 @@ designing and building an API for a vending machine, allowing users with a “se
 
 # Table Of Contents
 
-- [A quick overview of the API endpoints](#A-quick-overview-of-the-API-endpoints)
+- [A quick overview of the API endpoints](#a-quick-overview-of-the-api-endpoints)
 
-- [Security (Authentication/Authorization) using JWT](#Security(Authentication/Authorization)-using-JWT)
+- [Security (Authentication/Authorization) using JWT](#authentication-and-authorization-using-jwt)
 
-- [How to run the API](#How-to-run-the-API)
+- [How to run the API](#how-to-run-the-api)
 
-- [How to use the system and API tests for all implemented endpoints](#How-to-use-the-system-and-API-tests-for-all-implemented-endpoints)
+- [How to use the system and API tests for all implemented endpoints](#how-to-use-the-system-and-api-tests-for-all-implemented-endpoints)
 
-- [Logging using SeriLog](#Logging-using-SeriLog)
+- [Logging using SeriLog](#logging-using-serilog)
 
 
-# <a name="A-quick-overview-of-the-API-endpoints"></a> A quick overview of the API endpoints
+# A quick overview of the API endpoints
 
 ### In the API I have build 3 Controllers:
 - <b>UsersController</b> => Having the Following endpoints:
@@ -39,14 +39,14 @@ designing and building an API for a vending machine, allowing users with a “se
 #### And here's a photo to clarify all the endpoints from Swagger
 ![alt text](AllEndPointsFromSwagger.png) 
 
-# <a name="Security(Authentication/Authorization)-using-JWT"></a> Security (Authentication/Authorization) using JWT
+# Authentication and Authorization using JWT
 
 In order to secure the API I have used JWT (JSON Web Token).
 
 in order to use the API you have to be authenticated so first you have to register your account and then login to get your token that makes you authenticated and authorized to the system.
 
 
-# <a name="How-to-run-the-API"></a> How to run the API
+# How to run the API
 #### Prerequisites:
 - Download and Install .Net 8 
 - Download and Install Visual Studio or any other IDE that supports ASP.Net Core Applications.
@@ -59,7 +59,7 @@ in order to use the API you have to be authenticated so first you have to regist
 
 In the next section, we will see how to use the API and all the API tests for the implemented endpoints.
 
-# <a name="How-to-use-the-system-and-API-tests-for-all-implemented-endpoints"></a> How to use the system and API tests for all implemented endpoints
+# How to use the system and API tests for all implemented endpoints
 
 As I said before, in order to use the system you have to be registered in the system and also authenticated.
 </br> Let's see how this works and how all the endpoints work.
@@ -135,7 +135,7 @@ All the endpoints in this controller are authorized by the "buyer" role only.
 - reset endpoint tests:
 </br>![alt text](reset.png)
 
-# <a name="Logging-using-SeriLog"></a> Logging using SeriLog
+# Logging using SeriLog
 
 I have used SeriLog For logging some information about the system: 
 
